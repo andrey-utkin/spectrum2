@@ -111,7 +111,6 @@ void DiscoInfoResponder::setBuddyFeatures(std::list<std::string> &f) {
 
 void DiscoInfoResponder::addRoom(const std::string &jid, const std::string &name) {
 	std::string j = jid;
-	boost::algorithm::to_lower(j);
 	m_rooms[j] = name;
 }
 
