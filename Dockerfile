@@ -8,7 +8,7 @@ RUN echo $commit
 # Spectrum 2
 RUN dnf install protobuf protobuf swiften gcc gcc-c++ make libpqxx-devel libpurple-devel protobuf-devel swiften-devel rpm-build avahi-devel boost-devel cmake cppunit-devel expat-devel libcommuni-devel libidn-devel libsqlite3x-devel log4cxx-devel gettext libgcrypt-devel libwebp-devel libpurple-devel zlib-devel json-glib-devel python-pip zlib-devel libjpeg-devel python-devel  mysql-devel popt-devel git libevent-devel qt-devel dbus-glib-devel libcurl-devel wget -y && \
 	echo "---> Installing Spectrum 2" && \
-		git clone git://github.com/hanzz/spectrum2.git && \
+		git clone git://github.com/andrey-utkin/spectrum2.git && \
 		cd spectrum2 && \
 		./packaging/fedora/build_rpm.sh && \
 		rpm -U /root/rpmbuild/RPMS/x86_64/*.rpm && \
